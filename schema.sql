@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS animal_db;
+CREATE DATABASE animal_db;

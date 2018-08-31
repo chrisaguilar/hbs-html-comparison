@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12">
+        <h2>Here's all of our animals</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Sound</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each animals}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td><a href="/animal/{{id}}">{{name}}</a></td>
+                        <td>{{sound}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p>
+            <a href="/add">Click here to add a new animal</a>
+        </p>
+    </div>
+</div>
